@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    background-image: url("../img/startImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-main);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    width: 100%;
+    color: var(--color-sub);
+    text-align: center;
+}
+
+.container .logo, 
+.container .start {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .subText {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo */
+.logo img {
+    width: 312px;
+    height: 292px;
+    margin-top: 105px;
+}
+
+/* start */
+.start a {
+    margin-top: 150px;
+    padding: 50px;
+}
+
+
+.start a div:first-child {
+    font-size: 43px;
+    font-family: "POPPINS-EXTRALIGHTITALIC";
+    padding-bottom: 25px;
+    
+}
+
+.start a div:last-child {
+    font-size: 84px;
+    font-family: "Pretendard-SEMIBOLD";
+}
+
+/* subText */
+.subText div {
+    opacity: 0.8;
+    font-size: 26px;
+    color: var(--color-sub);
+}
+
+.subText div:first-child,
+.subText div:nth-child(2) {
+    font-family: "POPPINS-THIN";
+    font-weight: 600;
+}
+
+.subText div:last-child {
+    font-family: "Pretendard-THIN";
+    font-weight: 600;
+}

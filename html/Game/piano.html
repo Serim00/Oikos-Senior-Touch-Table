@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oikos Senior Tabele Game_MemoryGame</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/root.css">
+  <!-- <link rel="stylesheet" href="/css/Game/gameBasic.css"> -->
+  <link rel="stylesheet" href="/css/Game/piano-style.css">
+</head>
+
+<body>
+	<a href="../game.html">
+		<img src="/img/home.png" alt="">
+	</a>
+
+	<div class="top">
+		<!-- <div class="title">
+		  <div class="head_title">피아노 타일</div>
+
+		  <div class="sub_title">노래에 맞춰 내려오는 타일을<br>클릭해보세요~</div>
+		</div>
+		<a class="back_btn" href="/"><i class="fa-solid fa-house"></i></a> -->
+	  </div>
+
+	<div class="container">
+		<div class="gameOver">
+			<p>게임 끝</p>
+			<!-- Use js  to display block -->
+			<p>점수 <span id="total-score">0</span></p>
+			<p>최고 점수 <span id="best-score">0</span></p>
+			<button id="restart">다시 시작하기</button>
+		</div>
+		<div class="score">
+			<p>점수 <span id="current-score">0</span></p>
+			<p>최고 점수 <span id="high-score">0</span></p>
+		</div>
+		<div class="canvas"></div>
+	</div>
+
+
+	<audio id="start-button-music" src="/JS/Game/piano/sounds/start_button.mp3" hidden></audio>
+	<audio id="play-music" src="/JS/Game/piano/sounds/play.m4a" hidden></audio>
+	<audio id="result-music" src="/JS/Game/piano/sounds/gameOver.wav" hidden></audio>
+
+
+	<script type="module" src="/JS/Game/piano/index.js"></script>
+
+</body>
